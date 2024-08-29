@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tuan1_Bai1</title>
-    <link rel="stylesheet" href="../css/bai1b.css">
+    <link rel="stylesheet" href="../css/bai1c.css">
 </head>
 
 <body>
@@ -22,6 +22,16 @@
                 <li><input type="search" name="search" id="search"></li>
                 <li><button type="submit">Go</button></li>
             </ul>
+        </div>
+        <div id="menu1">
+            <ul>
+                <li>Home 1</li>
+                <li>Home 2</li>
+                <li>Home 3</li>
+                <li>Home 4</li>
+                <li>Home 5</li>
+            </ul>
+            <img src="../images/company.png" alt="">
         </div>
         <div id="section">
             <h1 id="Starters">Starters</h1>
@@ -50,6 +60,60 @@
             </ul>
             <a href="#top">Back to top</a>
             <p>Items marked with a (v) are suitable for vegetarians.</p>
+            <h1 id="info">Information</h1>
+            <table>
+                <tr>
+                    <th><input type="text" name="First Name" placeholder="First Name" class="input1"></th>
+                    <th><input type="text" name="Last Name" placeholder="Last Name" class="input1"></th>
+                </tr>
+                <tr>
+                    <th><input type="email" name="email" placeholder="Email" class="input1"></th>
+                    <th><input type="tel" name="Telephone" placeholder="Telephone" class="input1"></th>
+                </tr>
+                <tr>
+                    <th><input list="datalist" name="Counntry" placeholder="Counntry" class="input1"></th>
+                    <datalist id="datalist">
+                        <option value="USA"></option>
+                        <option value="Viet Nam"></option>
+                        <option value="United Kingdom"></option>
+                        <option value="Austraylia"></option>
+                        <option value="China"></option>
+                    </datalist>
+                    <th>
+                        <input type="checkbox" name="checkbox1" id="checkbox1">
+                        <label for="checkbox1">Option 1</label>
+                        <input type="checkbox" name="checkbox2" id="checkbox2">
+                        <label for="checkbox2">Option 2</label>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2"><input type="text" name="Comment" placeholder="Comment" id="comment"></th>
+                </tr>
+                <tr>
+                    <th>
+                        <button>Submit</button>
+                        <button>Cancle</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <div id="aside">
+            <div id="khung">
+                <h1>Event</h1>
+                <div class="noidung">
+                    <h2>Regular Meetings</h2>
+                    <img src="../images/meeting.png" alt="img">
+                    <p>Host your regular team meetings or activities in the comfort of your own private room. Charge up on Kith's aromatic coffee and delectable dishes for that extra boost in your work!</p>
+                </div>
+                <div class="noidung">
+                    <h2>Product Launches</h2>
+                    <img src="../images/launch.png" alt="img">
+                    <p>Launch your product with ease in a space that truly fits its image. Create an unforgettable experience for your guests with our spacious outlets! Whether you want to host an intimate celebration or launch an event for hundreds of guests, Kith's space is customisable to your needs</p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <address>ABC Company<sup>©</sup> - 1234567890 - abcdefgh@gmail.com</address>
         </div>
     </div>
 </body>
