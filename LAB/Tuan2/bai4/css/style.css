@@ -88,6 +88,21 @@ section #box2 {
 section #box3 {
     left: 150px;
 }
+section p{
+    margin: 20px;
+    color: red;
+}
+section ul {
+    float: right;
+    background-color: rgb(255, 231, 200);
+    border: 5px solid orange;
+    margin: 5px;
+    color: red;
+}
+section ul h2{
+    color: orange;
+}
+
 
 address {
     width: 76%;
