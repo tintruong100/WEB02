@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+#container {
+    width: 800px;
+    height: 800px;
+    border: 1px solid grey;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    float: left;
+    border-bottom: 3px solid orange;
+}
+
+header img {
+    height: 95px;
+    position: relative;
+    left: 400px;
+}
+
+menu {
+    margin: 0px;
+    width: 24%;
+    height: 700px;
+    background-image: url(../images/back.jpg);
+    background-repeat: no-repeat;
+    background-repeat: repeat-y;
+    float: left;
+    padding: 0;
+}
+
+menu ul {
+    padding: 0px;
+    list-style: none;
+}
+
+menu ul li {
+    width: 160px;
+    height: 35px;
+    line-height: 30px;
+    border-bottom: 2px dashed orange;
+}
+
+menu ul li a {
+    text-decoration: none;
+}
+
+section {
+    width: 76%;
+    height: 670px;
+    float: left;
+}
+
+section h1 {
+    margin: 20px;
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section img {
+    position: absolute;
+    z-index: -1;
+}
+
+section div {
+    position: relative;
+    z-index: 1;
+    height: auto;
+    width: 150px;
+    border: 2px solid grey;
+    background-color: rgb(248, 239, 221);
+    color: red;
+}
+
+section #box1 {
+    left: 200px;
+    bottom: 10px;
+}
+
+section #box2 {
+    right: 250px;
+}
+
+section #box3 {
+    left: 150px;
+}
+
+address {
+    width: 76%;
+    height: 30px;
+    float: left;
+    border-top: 3px solid orange;
+    color: orange;
+    text-transform: uppercase;
+    text-align: center;
+}
