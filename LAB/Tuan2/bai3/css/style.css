@@ -3,22 +3,12 @@
     margin: 0 auto;
 }
 #container{
-    width: 1000px;
-    height: 1200px;
+    width: 800px;
+    height: 1000px;
+    border: 1px solid grey;
+    background: url(../images/background.jpg);
 }
-#background{
-    width: 1000px;
-    height: 1200px;
-    position: absolute;
-    z-index: 1;
-}
-#img_index{
-    z-index: 2;
-    position: absolute;
-
-}
-#container div img{
-    position: relative;
-    margin: 0 auto;
-    left: 25%;
+#container img{
+    display: block;
+    width: 400px;
 }
