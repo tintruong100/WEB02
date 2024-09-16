@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function tamgiac(a, b, c){
+            if (a+b>c&&b+c>a&&c+a>b){
+                if(a==b&&b==c){
+                    document.write('Tam giac deu');
+                } else if (a==b||b==c||c==a){
+                    document.write('Tam giac can');
+                } else{
+                    document.write('Tam giac thuong')
+                }
+            }
+        }
+        var canh1 = parseInt(prompt("Nhap vao canh a"));
+        var canh2 = parseInt(prompt("Nhap vao canh b"));
+        var canh3 = parseInt(prompt("Nhap vao canh c"));
+        tamgiac(canh1,canh2,canh3);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

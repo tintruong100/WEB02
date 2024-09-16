@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function testYear(year){
+            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+                document.write(year, " la nam nhuan");
+            } else {
+                document.write(year, " khong la nam nhuan");
+            }
+        }
+        var nam = parseInt(prompt("Nhap nam:",2024));
+        testYear(nam);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
