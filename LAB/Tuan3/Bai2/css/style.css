@@ -6,14 +6,46 @@
 #container {
     width: 800px;
     height: 600px;
-    background-color: aqua;
 }
 
 header {
     width: 800px;
     height: 100px;
-    background-color: aquamarine;
+    background-color: #29507b;
     float: left;
+    position: relative;
+}
+
+header img {
+    height: 80px;
+    line-height: 100px;
+    margin: 10px;
+    float: left;
+}
+
+header #logo {
+    color: white;
+    position: absolute;
+    left: 80px;
+    top: 15px;
+}
+
+header #logo h1 {
+    font-size: 42px;
+}
+
+header #search {
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header #search input,
+button {
+    background-color: #1e3250;
+    border: 1px solid grey;
+    color: white;
 }
 
 section {
