@@ -4,8 +4,9 @@
 }
 
 #container {
-    width: 800px;
-    height: 600px;
+    width: 802px;
+    height: 602px;
+    border: 1px solid black;
 }
 
 header {
@@ -31,7 +32,10 @@ header #logo {
 }
 
 header #logo h1 {
-    font-size: 42px;
+    font-size: 36px;
+}
+header #logo h4 {
+    font-size: 14px;
 }
 
 header #search {
@@ -47,24 +51,104 @@ button {
     border: 1px solid grey;
     color: white;
 }
-
-section {
-    width: 600px;
-    height: 475px;
-    background-color: bisque;
-    float: left;
+header ul {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+header ul li {
+    display: inline-block;
+    background-color: #4A70A9;
+    padding: 10px;
+    margin-right: 5px;
+}
+header ul li a{
+    color: white;
+    text-decoration: none;
 }
 
-aside {
-    width: 200px;
+section {
+    width: 570px;
     height: 475px;
-    background-color: blueviolet;
     float: left;
+    padding-top: 20px;
+}
+h2 {
+    width: 100%;
+    height: 40px;
+    color: grey;
+    border-bottom: 3px dashed grey;
+    margin-bottom: 10px;
+}
+section nav {
+    width: 50%;
+    height: 445px;
+    float: left;
+    padding: 10px;
+}
+section p {
+    text-align: justify;
+    color: red;
+    text-shadow: 4px 4px 4px green;
+}
+section table tr th {
+    text-align: left;
+    color: grey;
+    padding: 10px 0px;
+}
+section table tr th button {
+    background-color: white;
+    color: grey;
+}
+#message{
+    display: block;
+    width: 100%;
+    height:80px;
+}
+#nav2{
+    padding-left: 40px;
+
+}
+.nav2{
+    color: grey;
+    text-shadow: none;
+    margin-bottom: 30px;
+}
+aside {
+    width: 230px;
+    height: 475px;
+    float: left;
+}
+aside div {
+    background-color: rgb(243, 243, 243);
+    margin: 70px 10px;
+    text-align: center;
+}
+aside img {
+    width: 80%;
+    text-align: center;
+    border: 1px solid black;
+    padding: 3px;
+}
+aside h2 {
+    padding-top: 10px;
+    text-align: left;
+}
+aside p {
+    padding-top: 10px;
+    text-align: justify;
+}
+aside a {
+    padding-top: 10px;
+    text-align: right;
 }
 
 address {
     width: 800px;
     height: 25px;
-    background-color: brown;
     clear: both;
+    color: white;
+    background-color: #29507b;
+    line-height: 25px;
+    padding-left: 10px;
 }
