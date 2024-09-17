@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0px auto;
+}
+
+#container {
+    width: 800px;
+    height: 600px;
+    background-color: aqua;
+}
+
+header {
+    width: 800px;
+    height: 100px;
+    background-color: aquamarine;
+    float: left;
+}
+
+section {
+    width: 600px;
+    height: 475px;
+    background-color: bisque;
+    float: left;
+}
+
+aside {
+    width: 200px;
+    height: 475px;
+    background-color: blueviolet;
+    float: left;
+}
+
+address {
+    width: 800px;
+    height: 25px;
+    background-color: brown;
+    clear: both;
+}
