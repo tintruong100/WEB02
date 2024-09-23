@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function kiemtrangay(x){
+            switch(x){
+                case 1: case 3: case 5: case 7: case 8: case 10: case 12: {
+                    document.write("Thang "+x+ " co 31 ngay");
+                    break;
+                }
+                case 4: case 6: case 10: case 12:{
+                    document.write("Thang "+x+ " co 30 ngay");
+                    break;
+                }
+                case 2: {
+                    var year = parseInt(prompt("Nhap nam: "));
+                    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0){
+                        document.write("Thang "+x+" nam "+ year + " co 29 ngay");
+                    } else {
+                        document.write("Thang "+x+" nam "+ year + " co 28 ngay");
+                    }
+                    break;
+                }
+                default: {
+                    document.write("Nhap sai thang!");
+                }
+            }
+        }
+        var month = parseInt(prompt("Nhap thang: "));
+        kiemtrangay(month);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
