@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hữu Dương</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@500&family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/data.js"></script>
+  </head>
+  <body>
+    <header>
+        <div>
+            <a href="../html/index.html" title="HUU DUONG - XE DAP THE GIOI">
+            <img
+                class="logo"
+                src="../img/logo.jpg"
+                alt="HUU DUONG - XE DAP THE GIOI"
+            />
+            </a>
+        </div>
+        <div>
+          <input type="text" placeholder="Từ khóa..." />
+          <i class="bi bi-search"></i>
+        </div>
+        <div>
+          <i class="bi bi-telephone"></i>
+          <div>
+            <a href="#">
+              <small>Gọi mua hàng</small>
+              <br />
+              <b>098 7556 203</b>
+            </a>
+          </div>
+        </div>
+        <div>
+          <i class="bi bi-person-circle"></i>
+          <div>
+              <b>Đăng nhập</b>
+              <br>
+              <b class="form">Đăng ký</b>
+          </div>
+        </div>
+        <div>
+          <i class="bi bi-cart"></i>
+          <b>Giỏ hàng</b>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li style="color: white;">TRANG CHỦ</li>
+        <li>XE ĐẠP THỂ THAO
+          <ul>
+            <li>Xe đạp địa hình</li>
+            <li>Xe đạp đua</li>
+            <li>Xe đạp thành phố</li>
+            <li>Xe đạp học sinh</li>
+            <li>Xe đạp gấp</li>
+          </ul>
+        </li>
+        <li>XE ĐẠP NHẬP KHẨU
+          <ul>
+            <li>Xe đạp California</li>
+            <li>Xe đạp Magicbros</li>
+            <li>Xe đạp Galaxy</li>
+            <li>Xe đạp Kawamura</li>
+            <li>Xe đạp Trinx Tempo</li>
+          </ul>
+        </li>
+        <li>XE ĐẠP TRẺ EM</li>
+        <li>LIÊN HỆ</li>
+      </ul>
+    </nav>
+    <section id="slider">
+    </section>
+    <section id="sale">
+    </section>
+    <section id="mountainBike">
+    </section>
+    <section id="cityBike">
+    </section>
+    <section id="racingBike">
+    </section>
+    <section id="childrenBike">
+    </section>
+    <footer>
+      <div>
+        <div>
+          <h3>HỖ TRỢ - DỊCH VỤ</h3>
+          <ul>
+            <li>Tổng đài hỗ trợ:0961839922</li>
+            <li>Chăm sóc khách hàng & Giải đáp thắc mắc:</li>
+            <li>0961839922 (08:30 - 12:00; 13:30 - 21:30)</li>
+            <li>Email: xedapthegioi@gmail.com</li>
+            <li>Bán hàng doanh nghiệp - Dự án</li>
+            <li>email: hiennguyen2268@gmail.com</li>
+          </ul>
+        </div>
+        <div>
+          <h3>SHOWROOM HÀ NỘI</h3>
+          <ul>
+            <li> 9 Ngõ 214 Nguyễn Xiển - Thanh Xuân - ĐT: 0961.83.99.22</li>
+            <li>Bản đồ đường đi</li>
+          </ul>
+        </div>
+        <div>
+          <h3>SHOWROOM HCM</h3>
+          <ul>
+            <li> 540/6 CMT 8, P11, Quận 3 - ĐT: 0932.662.886</li>
+            <li>Bản đồ đường đi</li>
+            <li> 485/6 Phan Văn Trị, Phường 5, Gò Vấp, HCM - ĐT: 0901.213.222</li>
+            <li>Bản đồ đường đi</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div>
+          <ul>
+            <li>HỎI ĐÁP – TƯ VẤN</li>
+            <li>HỆ THỐNG CỬA HÀNG</li>
+            <li>KIỂM TRA ĐƠN HÀNG</li>
+            <li>LIÊN HỆ</li>
+          </ul>
+          <pre>
+  Copyright 2023 © Xe Đạp Thế Giới
+  Đơn vị chủ quản: Công ty cổ phần truyền thông & công nghệ DLink
+  Địa chỉ: Tòa nhà CT10 - Khu đô thị Việt Hưng - Long Biên - Hà Nội
+  MST: 01054800924 - Đăng ký lần đầu 31/8/2011 - Thay đổi lần 3 ngày 6/12/2013
+</pre>
+        </div>
+        <div>
+          <h1>H U U D U O NG</h1>
+          <h3>X E   D A P  T H E  G I O I</h3>
+        </div>
+      </div>
+    </footer>
+    <script>
+      let index=0
+      const getslider=document.getElementById("slider")
+      getslider.innerHTML=`
+        <i class="bi bi-arrow-left-circle-fill" onclick="onClickButtonControl('back')"></i>
+        <img src="${slide[index]}" class="mainThumnail">
+        <i class="bi bi-arrow-right-circle-fill" onclick="onClickButtonControl('next')"></i>
+      `
+      const mainThumnail=document.getElementsByClassName("mainThumnail")[0]
+      const onClickButtonControl = (signal) =>{
+        signal === "back" ?index = index - 1:index = index + 1
+        if(index<0){
+          index = 0
+        }
+        if(index>3){
+          index = 3
+        }
+        return mainThumnail.src=`${slide[index]}`
+      }
+    </script>
+    <script>
+      const getTagSale=document.getElementById("sale")
+      getTagSale.innerHTML=`
+        <h2>KHUYẾN MÃI</H2>
+        ${productSale.map((product,index)=>{
+          return `
+          <div>
+            <div>
+              <p>${product.sale}</p>
+            </div>
+            <img src="${product.thumnail}" alt="">
+            <span>${product.type}</span>
+            <span>${product.name}</span>
+            <span><del>${product.price}</del>${product.priceSale}</span>
+    </div>
+          `
+        }).join(" ")}
+      `
+    </script>
+    <script>
+      const getMountainBike=document.getElementById("mountainBike")
+      getMountainBike.innerHTML=`
+        <h2>XE ĐẠP ĐỊA HÌNH</H2>
+        ${mountainBike.map((product,index)=>{
+          return `
+          <div>
+            <img src="${product.thumnail}" alt="">
+            <span>${product.type}</span>
+            <span>${product.name}</span>
+            <span>${product.price}</span>
+    </div>
+          `
+        }).join(" ")}
+        `
+    </script>
+    <script>
+      const getCityBike=document.getElementById("cityBike")
+      getCityBike.innerHTML=`
+        <h2>XE ĐẠP THÀNH PHỐ</H2>
+        ${cityBike.map((product,index)=>{
+          return `
+          <div>
+            <img src="${product.thumnail}" alt="">
+            <span>${product.type}</span>
+            <span>${product.name}</span>
+            <span>${product.price}</span>
+    </div>
+          `
+        }).join(" ")}
+        `
+    </script>
+    <script>
+      const getRacingBike=document.getElementById("racingBike")
+      getRacingBike.innerHTML=`
+        <h2>XE ĐẠP DUA</H2>
+        ${racingBike.map((product,index)=>{
+          return `
+          <div>
+            <img src="${product.thumnail}" alt="">
+            <span>${product.type}</span>
+            <span>${product.name}</span>
+            <span>${product.price}</span>
+    </div>
+          `
+        }).join(" ")}
+        `
+    </script>
+    <script>
+      const getChildrenBike=document.getElementById("childrenBike")
+      getChildrenBike.innerHTML=`
+        <h2>XE ĐẠP TRẺ EM</H2>
+        ${childrenBike.map((product,index)=>{
+          return `
+          <div>
+            <img src="${product.thumnail}" alt="">
+            <span>${product.type}</span>
+            <span>${product.name}</span>
+            <span>${product.price}</span>
+    </div>
+          `
+        }).join(" ")}
+        `
+    </script>
+    
+  </body>
+</html>

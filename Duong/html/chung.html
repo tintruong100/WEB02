@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tên Trang</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-danger text-white p-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="../html/index.html" class="text-white">
+                <img src="../img/logo.jpg" alt="Logo" class="logo" style="height: 70px;">
+            </a>
+            <div>
+                <input type="text" placeholder="Từ khóa..." class="form-control d-inline" style="width: 300px;">
+                <i class="bi bi-search text-white"></i>
+            </div>
+            <div>
+                <i class="bi bi-telephone"></i>
+                <small>Gọi mua hàng</small>
+                <b>098 7556 203</b>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#">TRANG CHỦ</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">XE ĐẠP THỂ THAO</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Xe đạp địa hình</a></li>
+                        <li><a class="dropdown-item" href="#">Xe đạp đua</a></li>
+                    </ul>
+                </li>
+                <!-- Thêm các mục khác tương tự -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Nội dung chính -->
+    <main class="container my-4">
+        <h1>Tên Trang Nội Dung</h1>
+        <div class="row">
+            <!-- Nội dung sản phẩm ở đây -->
+            <div class="col-md-4">
+                <img src="path/to/image.jpg" alt="Mô tả sản phẩm" class="img-fluid">
+                <h5>Tên sản phẩm</h5>
+                <p>Giá: <span class="text-danger">1.000.000 VNĐ</span></p>
+            </div>
+            <!-- Thêm các sản phẩm khác -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>HỖ TRỢ - DỊCH VỤ</h5>
+                    <ul class="list-unstyled">
+                        <li>Tổng đài hỗ trợ: 0961839922</li>
+                        <li>Email: xedapthegioi@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>SHOWROOM</h5>
+                    <ul class="list-unstyled">
+                        <li>Hà Nội: 9 Ngõ 214 Nguyễn Xiển</li>
+                        <li>HCM: 540/6 CMT 8, P11, Quận 3</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Thông tin</h5>
+                    <p>Copyright 2023 © Xe Đạp Thế Giới</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

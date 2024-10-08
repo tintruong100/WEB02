@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+}
+
+html,
+body {
+
+    width: 100%;
+    font-family: "Quicksand";
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(185, 170, 170, 0.593);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 120px;
+    background-color: #CC0E00;
+    color: white;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+header>div:first-child>a>img {
+    height: 70px;
+}
+
+header>div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+header>div:nth-child(2)>input {
+    width: 400px;
+    padding: 12px 48px 12px 16px;
+    font-size: 16px;
+    background-color: #a7a3a38a;
+    border: 1px solid #828080;
+    border-radius: 30px;
+    color: white;
+}
+
+header>div:nth-child(2)>input::placeholder {
+    color: white;
+}
+
+header>div:nth-child(2)>i {
+    position: absolute;
+    right: 18px;
+    border: none;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    top: 2px;
+}
+
+nav>ul,
+header>div:nth-child(5),
+header>div:nth-child(4),
+header>div:nth-child(3) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    margin: 0 4px;
+}
+
+header>div:nth-child(3)>div>a {
+    color: #fff;
+}
+
+.bi {
+    font-size: 30px;
+    padding: 6px 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+header>div:nth-child(3)>div>a:hover>b {
+    color: #9c9797f5;
+    transition: all 0.3s ease-in-out;
+}
+
+header>div:nth-child(4)>div>b:hover {
+    color: #9c9797f5;
+    cursor: pointer;
+}
+
+nav {
+    background: black;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav>ul {
+    margin: 0 120px;
+    color: rgba(255, 255, 255, 0.521);
+    justify-content: flex-start;
+}
+
+nav>ul>li {
+    position: relative;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 8px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+nav>ul>li:nth-child(2)>ul,
+nav>ul>li:nth-child(3)>ul {
+    position: absolute;
+    bottom: -178px;
+    opacity: 0;
+    background: #000;
+    z-index: 5;
+}
+
+nav>ul>li:nth-child(2):hover>ul,
+nav>ul>li:nth-child(3):hover>ul {
+    opacity: 1;
+}
+
+nav>ul>li:nth-child(2)>ul>li,
+nav>ul>li:nth-child(3)>ul>li {
+    padding: 8px 10px;
+    color: rgba(255, 255, 255, 0.521);
+    transition: all 0.3s ease-in-out;
+
+}
+
+nav>ul>li:nth-child(2)>ul>li:hover,
+nav>ul>li:nth-child(3)>ul>li:hover,
+nav>ul>li:hover {
+    color: #fff;
+}
+
+#slider {
+    position: relative;
+}
+
+#slider>img {
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+#slider>i:last-child,
+#slider>i:first-child {
+    position: absolute;
+    top: 40%;
+    font-size: 50px;
+    color: #fff;
+}
+
+#slider>i:first-child {
+    left: 60px;
+}
+
+#slider>i:last-child {
+    right: 60px;
+}
+
+#slider>i:hover {
+    color: #000;
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+#childrenBike,
+#cityBike,
+#mountainBike,
+#racingBike,
+#sale {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 80px;
+    background-color: rgba(255, 0, 0, 0.103);
+}
+
+#childrenBike>h2,
+#cityBike>h2,
+#mountainBike>h2,
+#racingBike>h2 {
+    position: absolute;
+    top: 30px;
+    left: 60%;
+    font-size: 30px;
+    color: #CC0E00;
+}
+
+#sale>h2 {
+    position: absolute;
+    color: #CC0E00;
+    top: 16px;
+    left: 86px;
+}
+
+#childrenBike>div,
+#cityBike>div,
+#mountainBike>div,
+#racingBike>div,
+#sale>div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#childrenBike>div:not(:nth-child(2)),
+#cityBike>div:not(:nth-child(2)),
+#mountainBike>div:not(:nth-child(2)),
+#racingBike>div:not(:nth-child(2)),
+#sale>div:not(:nth-child(2)){
+    width: 247px;
+}
+#childrenBike>div>span,
+#cityBike>div>span,
+#mountainBike>div>span,
+#racingBike>div>span,
+#sale>div>span {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient:  vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+#childrenBike>div>span:nth-child(2),
+#cityBike>div>span:nth-child(2),
+#mountainBike>div>span:nth-child(2),
+#racingBike>div>span:nth-child(2),
+#sale>div>span:nth-child(3){
+    color: #7e7c7c;
+    font-weight: 600;
+}
+#childrenBike>div>span:nth-child(3),
+#cityBike>div>span:nth-child(3),
+#mountainBike>div>span:nth-child(3),
+#racingBike>div>span:nth-child(3),
+#sale>div>span:nth-child(4){
+    color: #000000be;
+    font-weight: 900;
+}
+#childrenBike>div>span:nth-child(4),
+#cityBike>div>span:nth-child(4),
+#mountainBike>div>span:nth-child(4),
+#racingBike>div>span:nth-child(4),
+#sale>div>span:nth-child(5){
+    color: #CC0E00;
+    font-size: 20px;
+    font-weight: 900;
+}
+#sale>div>span:nth-child(5)>del{
+    margin-right: 10px;
+}
+#sale>div>div {
+    position: absolute;
+    width: 30px;
+    padding: 4px 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: #CC0E00;
+    color: white;
+    font-weight: 700;
+    top: 0;
+    left: 0;
+}
+#sale{
+    padding-top: 60px;
+}
+footer{
+    margin:60px 60px 0;
+}
+footer>div:first-child{
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+footer>div:first-child>div>ul>li{
+    padding: 4px;
+}
+footer>div:last-child>div>ul,
+footer>div:last-child{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+footer>div:last-child>div>ul>li{
+    padding: 12px;
+}
+footer>div:last-child>div{
+    margin-right: 180px;
+}

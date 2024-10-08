@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Thanh Toán</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Thông Tin Thanh Toán</h2>
+        
+        <form>
+            <div class="form-group">
+                <label for="fullName">Họ và Tên</label>
+                <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Nhập email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Số Điện Thoại</label>
+                <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Địa Chỉ</label>
+                <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ" required>
+            </div>
+            <div class="form-group">
+                <label for="paymentMethod">Phương Thức Thanh Toán</label>
+                <select class="form-control" id="paymentMethod" required>
+                    <option value="">Chọn phương thức...</option>
+                    <option value="creditCard">Thẻ Tín Dụng</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bankTransfer">Chuyển Khoản Ngân Hàng</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Xác Nhận Thanh Toán</button>
+        </form>
+
+        <h3 class="mt-5">Chi Tiết Đơn Hàng</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tên Sản Phẩm</th>
+                    <th>Số Lượng</th>
+                    <th>Giá</th>
+                    <th>Tổng</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sản Phẩm A</td>
+                    <td>2</td>
+                    <td>200.000 VNĐ</td>
+                    <td>400.000 VNĐ</td>
+                </tr>
+                <tr>
+                    <td>Sản Phẩm B</td>
+                    <td>1</td>
+                    <td>150.000 VNĐ</td>
+                    <td>150.000 VNĐ</td>
+                </tr>
+                <tr>
+                    <td colspan="3" class="text-right"><strong>Tổng Cộng</strong></td>
+                    <td><strong>550.000 VNĐ</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
