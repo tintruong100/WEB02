@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoc ki quan doi he</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="border">
+            <img src="../image/website.png" alt="" class="border" width="100%">
+        </header>
+        <nav class="border border-top-0">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Trang chu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#myModal">Dang ki</a>
+                </li>
+            </ul>
+        </nav>
+        <section class=" border border-top-0">
+            <h5 class="h5 text-center">LIST OF MEMBERS</h5>
+            <table class="table table-border">
+                <thead>
+                    <th>STT</th>
+                    <th>Ho va ten</th>
+                    <th>Gioi tinh</th>
+                    <th>So dien thoai</th>
+                    <th>Ngay sinh</th>
+                    <th>Dia chi</th>
+                    <th>Khoa hoc</th>
+                    <th>Hoc phi</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <footer class="text-center border border-top-0">
+            NGO TRUONG DUC TIN - 21088551
+        </footer>
+    </div>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title modal-">THONG TIN HOC VIEN</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row mb-3 mt-3">
+                            <label for="txtTen" class="col-3 form-label text-right">Ho va ten</label>
+                            <input type="text" name="txtTen" id="txtTen" class="col-9">
+                        </div>
+                        <div class="row mb-3 mt-3">
+                            <label for="txtSDT" class="col-3 form-label">So dien thoai</label>
+                            <input type="text" name="txtTen" id="txtTen" class="col-9">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success" id="luu">Luu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
