@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Giỏ hàng của Bike2School">
     <title>Giỏ Hàng</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.js"></script>
 </head>
+
 <body>
     <header class="bg-primary text-white text-center p-4">
         <h1>Bike2School</h1>
@@ -64,51 +67,7 @@
     <footer class="bg-dark text-white text-center p-4">
         <p>&copy; 2023 Bike2School. Tất cả quyền được bảo lưu.</p>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function getCart() {
-            return JSON.parse(localStorage.getItem('cart')) || [];
-        }
-
-        function renderCartItems() {
-            const cart = getCart();
-            const cartItemsContainer = $("#cartItems");
-            cartItemsContainer.empty();
-            let total = 0;
-
-            cart.forEach(item => {
-                const itemTotal = item.price * item.quantity;
-                total += itemTotal;
-                cartItemsContainer.append(`
-                    <tr>
-                        <td>${item.name}</td>
-                        <td>${item.price.toLocaleString()} VNĐ</td>
-                        <td>${item.quantity}</td>
-                        <td>${itemTotal.toLocaleString()} VNĐ</td>
-                        <td><button class="btn btn-danger btn-sm" onclick="removeItem('${item.name}')">Xóa</button></td>
-                    </tr>
-                `);
-            });
-
-            $("#totalAmount").text(`Tổng Cộng: ${total.toLocaleString()} VNĐ`);
-        }
-
-        function removeItem(name) {
-            const cart = getCart();
-            const updatedCart = cart.filter(item => item.name !== name);
-            localStorage.setItem('cart', JSON.stringify(updatedCart));
-            renderCartItems();
-        }
-
-        $(document).ready(() => {
-            renderCartItems();
-
-            $("#checkoutBtn").click(() => {
-                window.location.href = "checkout.html"; // Chuyển đến trang thanh toán
-            });
-        });
-    </script>
+    <script src="../js/cart_script.js"></script>
 </body>
+
 </html>
